@@ -1,0 +1,28 @@
+:root {
+    --border-width: 3px;
+}
+
+.container-fluid {
+    justify-content: end !important;
+}
+
+.content {
+    width: 100%;
+    height: auto;
+    border: var(--border-width) solid blue;
+    margin-top: 30px;
+}
+
+.toolbar {
+    border: var(--border-width) solid;
+    justify-content: end;
+}
+
+.code-box {
+    border: var(--border-width) solid;
+}
+
+#min-btn::after {
+    content: '|';
+    padding-left: 10px;
+}

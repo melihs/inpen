@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inpen</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="./app.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white" href="#" id="history-btn" role="button"
+           data-bs-toggle="dropdown">
+          History
+        </a>
+        <ul class="dropdown-menu"></ul>
+      </li>
+    </ul>
+    <button class="btn btn-warning" id="save-btn">save</button>
+  </div>
+</nav>
+<div class="container p-5">
+  <div class="row">
+    <div class="col-12 p-0">
+      <iframe class="content" id="ifames" srcdoc="content"></iframe>
+    </div>
+  </div>
+  <div class="row mt-2">
+    <div class="col-12 toolbar d-flex">
+      <button class="btn p-0" id="min-btn">minimize</button>
+      <button class="btn p-0" id="run-btn">run</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4 code-box p-0">
+      <textarea cols="46" rows="11" placeholder="html"></textarea>
+    </div>
+    <div class="col-4 code-box p-0">
+      <textarea cols="46" rows="11" placeholder="css"></textarea>
+    </div>
+    <div class="col-4 code-box p-0">
+      <textarea  cols="46" rows="11" placeholder="javascript"></textarea>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+</body>
+</html>
