@@ -5,7 +5,7 @@ A minimalist editor that supports js, css and html languages and allows you to r
 
 ```
 
-$ git clone https://github.com/melihs/inpen
+$ git clone https://github.com/melihs/inpen.git
 ```
 
 ```
