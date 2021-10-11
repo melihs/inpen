@@ -19,10 +19,28 @@
         <ul class="dropdown-menu"></ul>
       </li>
     </ul>
-    <button class="btn btn-warning" id="save-btn">save</button>
+    <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#saveModal">save</button>
   </div>
 </nav>
 <div class="container p-5">
+  <div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="saveModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="template-name" class="col-form-label">Template Name</label>
+            <input type="text" class="form-control" id="template-name">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" id="save-btn" class="btn btn-success">Save</button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-12 p-0">
       <iframe class="content" srcdoc="content"></iframe>
@@ -30,8 +48,8 @@
   </div>
   <div class="row mt-2">
     <div class="col-12 toolbar d-flex">
-      <button class="btn p-0" id="min-btn">minimize</button>
-      <button class="btn p-0" id="run-btn">run</button>
+      <button class="btn p-0 text-warning fw-bold" id="min-btn">minimize</button>
+      <button class="btn p-0 text-success fw-bold" id="run-btn">run</button>
     </div>
   </div>
   <div class="row">
@@ -42,7 +60,7 @@
       <textarea cols="46" rows="11" placeholder="css"></textarea>
     </div>
     <div class="col-4 code-box p-0">
-      <textarea  cols="46" rows="11" placeholder="javascript"></textarea>
+      <textarea cols="46" rows="11" placeholder="javascript"></textarea>
     </div>
   </div>
 </div>

@@ -4,6 +4,11 @@
 
 .container-fluid {
     justify-content: end !important;
+    margin: 0 10px 0;
+}
+
+.navbar-nav {
+    margin-right: 10px;
 }
 
 .content {
