@@ -21,8 +21,11 @@ window.onload = () => {
     }
 
     runBtn.addEventListener('click', () => {
-        console.log(result);
         iframe.srcdoc = result
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "s") iframe.srcdoc = result;
     });
 
     const minimizeEffect = () => {
